@@ -4,7 +4,6 @@ import "./style.css";
 window.onload = () => {
   document.querySelector("#buttonNewExcuse").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuse();
-    console.log("Hello ");
   });
 };
 
@@ -26,6 +25,6 @@ let generateExcuse = () => {
   let whenIndex = Math.floor(Math.random() * when.length);
 
   return (
-    who[whoIndex] + action[actionIndex] + what[whatIndex] + "" + when[whenIndex]
+    who[whoIndex] + action[actionIndex] + what[whatIndex] + when[whenIndex]
   );
 };
